@@ -1,130 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quzly - Smarter Tutoring</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #4871db;
-      color: white;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 60px;
-    }
-    header a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.5rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: 500;
-    }
-    .main {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 80px 100px;
-    }
-    .left {
-      max-width: 50%;
-    }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-    .stats {
-      margin-top: 40px;
-      display: flex;
-      gap: 60px;
-    }
-    .stat-box {
-      background: white;
-      color: #4871db;
-      padding: 20px 40px;
-      border-radius: 12px;
-      font-weight: 600;
-      font-size: 1.2rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease;
-    }
-    .stat-box:hover {
-      transform: scale(1.05);
-    }
-    .right {
-      text-align: center;
-    }
-    .get-started {
-      padding: 18px 36px;
-      font-size: 1.2rem;
-      border: none;
-      background-color: white;
-      color: #4871db;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    .get-started:hover {
-      background-color: #e8ecff;
-    }
-    footer {
-      text-align: center;
-      padding: 25px;
-      background: #3a5fc1;
-      margin-top: 60px;
-    }
-    footer a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quzly | Smarter Tutoring</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Top Navigation -->
   <header>
-    <a href="index.html">Quzly</a>
+    <div class="logo">Quzly</div>
     <nav>
-      <a href="become-tutor.html">For Tutors</a>
-      <a href="contact.html">Contact Us</a>
+      <a href="#" class="tutor-link">Tutors</a>
     </nav>
   </header>
 
-  <section class="main">
-    <div class="left">
-      <h1>Smarter Tutoring, Better Results.</h1>
-      <p>Quzly connects students with top tutors from Canada’s best universities like McGill and Waterloo. 
-      Personalized sessions, proven results, and lasting confidence — all in one place.</p>
-      <div class="stats">
-        <div class="stat-box">500+ Students Helped</div>
-        <div class="stat-box">+18% Avg. Grade Improvement</div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="content">
+      <div class="left">
+        <h1>Smarter Tutoring.</h1>
+        <p>
+          At Quzly, we connect students with expert tutors from Canada’s top universities.
+          Track your progress with quizzes, receive tailored tutoring, and see measurable results over time.
+        </p>
+
+        <div class="stats">
+          <div class="stat">
+            <span class="count" data-target="1247">0</span>
+            <p>Students Helped</p>
+          </div>
+          <div class="stat">
+            <div class="inline">
+              <span class="count" data-target="37">0</span><span class="percent">%</span>
+            </div>
+            <p>Average Improvement</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="right">
-      <button class="get-started">Get Started</button>
+      <div class="right">
+        <button id="getStartedBtn">Get Started</button>
+      </div>
     </div>
   </section>
 
+  <!-- Universities Section -->
+  <section class="universities">
+    <h2>Our Tutors Come from Canada’s Best Universities</h2>
+    <div class="logos">
+      <img src="images/waterloo.png" alt="University of Waterloo">
+      <img src="images/mcgill.png" alt="McGill University" />
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <a href="contact.html">Contact Us</a> | 
-    <a href="become-tutor.html">Become a Tutor</a>
+    <div class="footer-links">
+      <a href="contact.html">Contact Us</a>
+      <a href="#">Become a Tutor</a>
+    </div>
     <p>© 2025 Quzly. All rights reserved.</p>
   </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
