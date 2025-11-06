@@ -12,10 +12,19 @@ header {
   align-items: center;
   padding: 25px 60px;
 }
+.logo-link {
+    text-decoration: none; /* removes underline */
+    color: white; /* or whatever color your header text/logo should be */
+}
 
 .logo {
   font-size: 2rem;
   font-weight: 700;
+}
+
+.logo-link:hover .logo {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 nav a {
