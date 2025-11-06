@@ -10,8 +10,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 60px;
+  padding: 25px 90px;
 }
+
 .logo-link {
     text-decoration: none; /* removes underline */
     color: white; /* or whatever color your header text/logo should be */
