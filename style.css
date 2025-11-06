@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
-  background-color: #f9fbfd;
-  color: #333;
+  font-family: "Outfit", sans-serif;
+  background-color: #0a4dff;
+  color: #fff;
 }
 
 /* Header */
@@ -10,109 +10,140 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 25px 60px;
 }
 
 .logo {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
-  color: #0057b7;
 }
 
 nav a {
-  color: #333;
+  color: #fff;
   text-decoration: none;
   font-weight: 500;
+  transition: 0.3s;
 }
 
 nav a:hover {
-  color: #0057b7;
+  opacity: 0.8;
 }
 
 /* Hero Section */
 .hero {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 60px;
+}
+
+.content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 60px;
-  background-color: #e9f3ff;
+  width: 100%;
+  max-width: 1200px;
 }
 
-.hero .left {
-  width: 50%;
+.left {
+  width: 55%;
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 20px;
-  color: #003366;
+  font-weight: 700;
 }
 
 .hero p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
+  color: #e5eaff;
 }
 
+/* Stats */
 .stats {
-  margin-top: 15px;
+  display: flex;
+  gap: 60px;
 }
 
-.stats p {
-  margin: 5px 0;
-  font-weight: 500;
+.stat {
+  text-align: center;
+}
+
+.stat .count {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  display: block;
+}
+
+.stat .percent {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.stat p {
+  font-size: 1.1rem;
+  margin-top: 5px;
+  color: #e5eaff;
 }
 
 /* Button */
-button#getStartedBtn {
-  padding: 16px 36px;
-  font-size: 1.2rem;
-  background-color: #0057b7;
-  color: white;
+#getStartedBtn {
+  padding: 18px 40px;
+  font-size: 1.3rem;
+  background-color: #fff;
+  color: #0a4dff;
+  font-weight: 700;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: transform 0.3s ease, background 0.3s;
 }
 
-button#getStartedBtn:hover {
-  background-color: #00429b;
+#getStartedBtn:hover {
+  transform: scale(1.05);
+  background-color: #e5eaff;
 }
 
-/* Universities Section */
+/* Universities */
 .universities {
   text-align: center;
-  padding: 60px 20px;
+  padding: 100px 20px;
+  background-color: #ffffff;
+  color: #0a4dff;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
 }
 
 .universities h2 {
-  color: #003366;
-  margin-bottom: 30px;
+  font-size: 1.8rem;
+  margin-bottom: 40px;
 }
 
 .logos img {
-  width: 150px;
-  margin: 0 20px;
+  width: 160px;
+  margin: 0 25px;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 30px 20px;
-  background-color: #ffffff;
-  border-top: 1px solid #ddd;
-  margin-top: 60px;
+  padding: 40px 20px;
+  background-color: #002fa7;
+  margin-top: 0;
 }
 
 .footer-links {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .footer-links a {
-  margin: 0 10px;
-  color: #0057b7;
+  margin: 0 15px;
+  color: #fff;
   text-decoration: none;
   font-weight: 500;
 }
