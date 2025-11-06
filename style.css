@@ -60,7 +60,7 @@ nav a:hover {
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 40px;
-  color: #e5eaff;
+  color: #e8ecff;
 }
 
 /* Stats */
@@ -73,11 +73,17 @@ nav a:hover {
   text-align: center;
 }
 
+.inline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
 .stat .count {
   font-size: 3rem;
   font-weight: 700;
   color: #fff;
-  display: block;
 }
 
 .stat .percent {
@@ -96,7 +102,7 @@ nav a:hover {
   padding: 18px 40px;
   font-size: 1.3rem;
   background-color: #fff;
-  color: #0a4dff;
+  color: #4871db;
   font-weight: 700;
   border: none;
   border-radius: 10px;
@@ -114,7 +120,7 @@ nav a:hover {
   text-align: center;
   padding: 100px 20px;
   background-color: #ffffff;
-  color: #0a4dff;
+  color: #4871db;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
 }
@@ -133,8 +139,7 @@ nav a:hover {
 footer {
   text-align: center;
   padding: 40px 20px;
-  background-color: #002fa7;
-  margin-top: 0;
+  background-color: #3656b3;
 }
 
 .footer-links {
@@ -150,4 +155,43 @@ footer {
 
 .footer-links a:hover {
   text-decoration: underline;
+}
+
+/* Contact Page */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: #4871db;
+  color: white;
+  text-align: center;
+}
+
+.contact-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-container p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #f2f4ff;
+}
+
+.contact-container a {
+  display: inline-block;
+  background: white;
+  color: #4871db;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.contact-container a:hover {
+  background: #e5eaff;
+  transform: scale(1.05);
 }
