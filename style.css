@@ -195,3 +195,42 @@ footer {
   background: #e5eaff;
   transform: scale(1.05);
 }
+
+/* Come a tutor Page */
+.become-tutor-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: #4871db;
+  color: white;
+  text-align: center;
+}
+
+.become-tutor-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.become-tutor-container p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #f2f4ff;
+}
+
+.become-tutor-container a {
+  display: inline-block;
+  background: white;
+  color: #4871db;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.become-tutor-container a:hover {
+  background: #e5eaff;
+  transform: scale(1.05);
+}
