@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Session | Quzly</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo-link"><div class="logo">Quzly</div></a>
+  </header>
+
+  <div class="fullpage-center booking-container">
+    <h2>Book a Tutoring Session</h2>
+    <p>Choose your subject, class, tutor, and preferred time below.</p>
+
+    <form class="booking-form">
+      <label for="subject">Subject</label>
+      <select id="subject" required>
+        <option value="" disabled selected>Select subject</option>
+        <option value="math">Math</option>
+        <option value="physics">Physics</option>
+        <option value="chemistry">Chemistry</option>
+        <option value="biology">Biology</option>
+        <option value="english">English</option>
+      </select>
+
+      <label for="class">Class / Course</label>
+      <input type="text" id="class" placeholder="e.g. Calculus II" required>
+
+      <label for="tutor">Tutor</label>
+      <select id="tutor" required>
+        <option value="" disabled selected>Select tutor</option>
+        <option value="sarah">Sarah – McGill University</option>
+        <option value="ethan">Ethan – University of Waterloo</option>
+        <option value="amelia">Amelia – University of Toronto</option>
+      </select>
+
+      <label for="time">Booking Time</label>
+      <input type="datetime-local" id="time" required>
+
+      <button type="submit" id="bookBtn">Book Session</button>
+    </form>
+  </div>
+</body>
+</html>
