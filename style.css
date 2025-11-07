@@ -1,3 +1,4 @@
+/* General */
 body {
   margin: 0;
   font-family: "Outfit", sans-serif;
@@ -14,8 +15,8 @@ header {
 }
 
 .logo-link {
-    text-decoration: none; /* removes underline */
-    color: white; /* or whatever color your header text/logo should be */
+  text-decoration: none;
+  color: white;
 }
 
 .logo {
@@ -24,8 +25,8 @@ header {
 }
 
 .logo-link:hover .logo {
-    opacity: 0.8;
-    cursor: pointer;
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 nav a {
@@ -39,7 +40,7 @@ nav a:hover {
   opacity: 0.8;
 }
 
-/* Hero Section */
+/* Hero Section (Home Page) */
 .hero {
   min-height: 80vh;
   display: flex;
@@ -107,7 +108,9 @@ nav a:hover {
   color: #e5eaff;
 }
 
-/* Button */
+/* Main Button */
+button,
+a.button,
 #getStartedBtn {
   padding: 18px 40px;
   font-size: 1.3rem;
@@ -118,14 +121,17 @@ nav a:hover {
   border-radius: 10px;
   cursor: pointer;
   transition: transform 0.3s ease, background 0.3s;
+  text-decoration: none;
 }
 
+button:hover,
+a.button:hover,
 #getStartedBtn:hover {
   transform: scale(1.05);
   background-color: #e5eaff;
 }
 
-/* Universities */
+/* Universities Section */
 .universities {
   text-align: center;
   padding: 100px 20px;
@@ -167,81 +173,22 @@ footer {
   text-decoration: underline;
 }
 
-/* Contact Page */
-.contact-container {
+/* Generic full-page centered layout (used for Contact & Tutor pages) */
+.fullpage-center {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
+  min-height: 100vh;
+  text-align: center;
   background-color: #4871db;
   color: white;
-  text-align: center;
-}
-
-.contact-container h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.contact-container p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  color: #f2f4ff;
-}
-
-.contact-container a {
-  display: inline-block;
-  background: white;
-  color: #4871db;
-  padding: 14px 28px;
-  border-radius: 8px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background 0.3s, transform 0.2s;
-}
-
-.contact-container a:hover {
-  background: #e5eaff;
-  transform: scale(1.05);
-}
-
-/* Become a Tutor page - full height, centered */
-.tutor-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh; /* full viewport height */
-  background-color: #4871db;
-  color: white;
-  text-align: center;
   padding: 40px;
   box-sizing: border-box;
 }
 
-.tutor-container h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.tutor-container p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.tutor-container ul {
-  text-align: left;
-  max-width: 500px;
-  margin: 20px auto;
-  padding-left: 20px;
-}
-
-.tutor-container li {
-  margin-bottom: 10px;
-}
-
-.apply-btn {
+/* Buttons for secondary pages */
+.contact-btn, .apply-btn {
   display: inline-block;
   background: white;
   color: #4871db;
@@ -254,7 +201,19 @@ footer {
   margin-top: 20px;
 }
 
-.apply-btn:hover {
+.contact-btn:hover, .apply-btn:hover {
   background: #e5eaff;
   transform: scale(1.05);
+}
+
+/* List style for Tutor page */
+.fullpage-center ul {
+  text-align: left;
+  max-width: 500px;
+  margin: 20px auto;
+  padding-left: 20px;
+}
+
+.fullpage-center li {
+  margin-bottom: 10px;
 }
