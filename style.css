@@ -217,3 +217,54 @@ footer {
 .fullpage-center li {
   margin-bottom: 10px;
 }
+
+/* Booking Page */
+.booking-container {
+  gap: 20px;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.booking-form label {
+  text-align: left;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.booking-form input,
+.booking-form select {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+  box-shadow: 0 0 0 3px #e5eaff;
+}
+
+#bookBtn {
+  background-color: white;
+  color: #4871db;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 0;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s;
+}
+
+#bookBtn:hover {
+  transform: scale(1.05);
+  background-color: #e5eaff;
+}
+
