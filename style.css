@@ -206,65 +206,55 @@ footer {
   transform: scale(1.05);
 }
 
-/* Become a Tutor Page */
-.become-tutor-container {
+/* Become a Tutor page - full height, centered */
+.tutor-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
+  min-height: 100vh; /* full viewport height */
   background-color: #4871db;
   color: white;
   text-align: center;
-  padding: 50px;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
-.become-tutor-container h2 {
+.tutor-container h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
-.become-tutor-container p {
+.tutor-container p {
   font-size: 1.2rem;
   margin-bottom: 20px;
-  color: #f2f4ff;
 }
 
-.become-tutor-container ul {
+.tutor-container ul {
   text-align: left;
-  margin: 20px 0;
+  max-width: 500px;
+  margin: 20px auto;
   padding-left: 20px;
 }
 
-.become-tutor-container li {
+.tutor-container li {
   margin-bottom: 10px;
 }
 
-.become-tutor-container a button.apply-btn {
+.apply-btn {
   display: inline-block;
   background: white;
   color: #4871db;
   padding: 14px 28px;
   border-radius: 8px;
   font-weight: 600;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
+  font-size: 1.1rem;
+  text-decoration: none;
   transition: background 0.3s, transform 0.2s;
+  margin-top: 20px;
 }
 
-.become-tutor-container a button.apply-btn:hover {
+.apply-btn:hover {
   background: #e5eaff;
   transform: scale(1.05);
-}
-
-/* Logo link */
-.logo-link {
-  text-decoration: none;
-  color: white;
-}
-
-.logo-link .logo {
-  font-size: 2rem;
-  font-weight: 700;
 }
